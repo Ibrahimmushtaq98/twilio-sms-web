@@ -41,7 +41,7 @@ const AuthenticationApiKeyForm = ({ accountSid='', apiKey='', apiSecret='', load
     />
     <div className="buttons-container">
       <button className="btn btn-secondary" type="button" onClick={onCancel}>Cancel</button>
-      <button className="btn btn-primary" type="submit">Sing-in</button>
+      <button className="btn btn-primary" type="submit">Sign-in</button>
     </div>
   </form>
 )
