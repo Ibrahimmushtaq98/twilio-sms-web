@@ -32,7 +32,7 @@ const AuthenticationAuthTokenForm = ({ accountSid='', authToken='', loading=fals
     />
     <div className="buttons-container">
       <button className="btn btn-secondary" type="button" onClick={onCancel}>Cancel</button>
-      <button className={`btn btn-primary ${loadingClassName(loading)}`} type="submit">Sing-in</button>
+      <button className={`btn btn-primary ${loadingClassName(loading)}`} type="submit">Sign-in</button>
     </div>
   </form>
 )

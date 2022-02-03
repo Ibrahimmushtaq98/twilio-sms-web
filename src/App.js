@@ -10,12 +10,18 @@ import './App.css'
 
 import React from "react";
 import {HashRouter, Route, Switch} from "react-router-dom";
+import { createBrowserHistory, createHashHistory } from 'history';
+import { isElectron } from './utils';
 
 import {AuthenticationProvider} from "./context/AuthenticationProvider";
 import AuthenticationPage from "./component/AuthenticationPage/AuthenticationPage"
 import MessagesPage from "./component/MessagesPage/MessagesPage"
 import AuthenticationAuthTokenPage from "./component/AuthenticationAuthTokenPage/AuthenticationAuthTokenPage";
 import AuthenticationApiKeyPage from "./component/AuthenticationApiKeyPage/AuthenticationApiKeyPage";
+
+export const history = isElectron()
+  ? createHashHistory()
+  : createBrowserHistory();
 
 const App = () => {
   return (
